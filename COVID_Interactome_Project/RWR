@@ -1,0 +1,60 @@
+import networkx as nx
+import pandas as pd
+import numpy as np
+import csv
+import networkx as nx
+from scipy.stats import rankdata
+
+#Open TSV file
+data = pd.read_csv("./project_hpa_data/lung.tsv", delimiter = '\t', header = None, usecols = [0,1])
+data
+
+G = nx.from_pandas_edgelist(data, source = 0, target = 1)
+nx.is_directed(G)
+
+#Creating adjacency matrix
+adj_mat = nx.to_numpy_matrix(G)
+adj_mat
+
+#Loading Krogan Proteins file
+krogan_proteins = pd.read_excel("./krogan_proteins.xlsx", usecols= [0])
+krogan_proteins
+
+#Neighbors 
+nodes = list(G.nodes())
+neighbors = {}
+for gene in krogan_proteins['Gene stable ID']:
+    if gene in nodes:
+        neighbors[gene] = []
+        for i in np.where(adj_mat[nodes.index(gene)] == 1)[1]:
+            neighbors[gene].append(nodes[i])
+            
+print(neighbors)
+
+#Writing IDs of first neighbor in to CSV file
+with open('firstneighbors.csv', 'w') as csv_file:  
+    writer = csv.writer(csv_file)
+    for key, value in neighbors.items():
+        writer.writerow([key, value])
+
+#Random Walk with Restart
+df = pd.DataFrame(krogan_proteins)
+df['V'] = '1'
+df
+
+krogan_dict = df.set_index('Gene stable ID')['V'].to_dict()
+a = nx.pagerank_scipy(G, personalization=krogan_dict)
+a
+#len(a)
+
+#Converting dict to df
+k_df = pd.DataFrame([a])
+k_df
+#Transpose DF
+k_t= k_df.T
+k_t
+
+#threshold 0.0005 mask
+threshold_mask = k_t[0]>0.0005
+
+k_t[threshold_mask]

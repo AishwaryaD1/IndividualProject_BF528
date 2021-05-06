@@ -4,8 +4,6 @@ Project 1 provides analysis of a public microarray dataset. We reproduce results
 
 # Contributors
 
-
-List contributor names and github user names, or email addresses if desired
 =======
 Names: Konrad Thorner, Aishwarya Deengar, Jia Liu, Morgan Rozman
 

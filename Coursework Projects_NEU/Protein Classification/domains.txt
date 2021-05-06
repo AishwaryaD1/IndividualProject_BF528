@@ -1,0 +1,122 @@
+
+26S Proteasome non-ATPase regulatory subunit 7/8
+Alpha-2-macroglobulin
+Alpha-2-macroglobulin, bait region domain
+Alpha-2-macroglobulin, conserved site
+Alpha-catenin/vinculin-like superfamily
+Alpha-macroglobulin, receptor-binding
+Alpha-macroglobulin, receptor-binding domain superfamily
+Alpha-macroglobulin, TED domain
+Ankyrin repeat
+Ankyrin repeat-containing domain
+Ankyrin repeat-containing domain superfamily
+Arc-type ribbon-helix-helix
+Armadillo-type fold
+BTB/Kelch-associated
+BTB/POZ domain
+Calcium/calmodulin-dependent protein kinase II, association-domain
+Choline/carnitine acyltransferase domain
+Class II aldolase/adducin N-terminal
+Class II aldolase/adducin N-terminal domain superfamily
+Complement C3/4/5, macroglobulin domain MG1
+Concanavalin A-like lectin/glucanase domain superfamily
+CUB domain
+Cytidine deaminase-like
+Cytochrome P450
+Cytochrome P450, E-class, group I
+Cytochrome P450 superfamily
+EF-Hand 1, calcium-binding site
+EF-hand domain
+EF-hand domain pair
+EGF-like calcium-binding domain
+EGF-like, conserved site
+Endoplasmic reticulum oxidoreductin 1
+ERO1-like superfamily
+FERM domain
+FERM, N-terminal
+Fibronectin type III
+Fibronectin type III superfamily
+Glycosyl transferase family 10
+Glycosyl transferase, family 3
+GOLD domain
+GPCR, family 2-like
+GPCR, family 2, secretin-like
+GT10-like superfamily
+Guanylate kinase
+Guanylate kinase, conserved site
+Guanylate kinase-like domain
+Guanylate kinase/L-type calcium channel beta subunit
+HAP1, N-terminal
+Histone deacetylase complex subunit SAP130, C-terminal domain
+Immunoglobulin E-set
+Immunoglobulin-like fold
+JAB1/MPN/MOV34 metalloenzyme domain
+Kazal domain
+Kazal domain superfamily
+K Homology domain, type 1 superfamily
+Krr1, KH1 domain
+Laminin G domain
+Leucine-rich repeat
+Leucine-rich repeat, cysteine-containing subtype
+Leucine-rich repeat domain superfamily
+Lysine-specific demethylase-like domain
+Macroglobulin domain
+Macroglobulin domain MG3
+Macroglobulin domain MG4
+MD-2-related lipid-recognition domain
+MIF4G-like domain superfamily
+MIF4G-like, type 2
+MPN domain
+MyTH4 domain
+MyTH4 domain superfamily
+NAD(P)-binding domain superfamily
+Netrin domain
+Netrin module, non-TIMP type
+Npc2 like, ML domain
+NTF2-like domain superfamily
+Nucleoside diphosphate kinase
+Nucleoside diphosphate kinase, active site
+Nucleoside diphosphate kinase-like domain
+Nucleoside diphosphate kinase-like domain superfamily
+Nucleoside phosphorylase/phosphoribosyltransferase catalytic domain superfamily
+NUDE domain
+Organic anion transporter polypeptide
+PDZ domain
+PDZ superfamily
+Peptidase M17, leucine aminopeptidase/peptidase B
+Peptidase M17, leucyl aminopeptidase, C-terminal
+Peptidase S9A, N-terminal domain
+Pleckstrin homology domain
+P-loop containing nucleoside triphosphate hydrolase
+Protein kinase-like domain superfamily
+Protein of unknown function DUF5582
+Rhodanese-like domain superfamily
+Ribosomal protein L15e
+Ribosomal protein L15e, conserved site
+Ribosomal protein L15e core domain superfamily
+Ribosomal protein L23/L15e core domain superfamily
+RmlC-like jelly roll fold
+Rpn11/EIF3F, C-terminal
+Sec7, C-terminal domain superfamily
+Sec7 domain
+Sec7 domain superfamily
+SKP1/BTB/POZ domain superfamily
+Spermadhesin, CUB domain superfamily
+Spt5 C-terminal domain
+START-like domain superfamily
+Terpenoid cyclases/protein prenyltransferase alpha-alpha toroid
+Tetraspanin/Peripherin
+Tetratricopeptide-like helical domain superfamily
+Tissue inhibitor of metalloproteinases-like, OB-fold
+U4/U6.U5 small nuclear ribonucleoprotein 27kDa protein
+Ubiquitin-like domain superfamily
+Uncharacterised protein family UPF0183
+Vinculin/alpha-catenin
+VWFC domain
+WD40 repeat
+WD40 repeat, conserved site
+WD40-repeat-containing domain
+WD40-repeat-containing domain superfamily
+WD40/YVTN repeat-like-containing domain superfamily
+Zinc finger, RING/FYVE/PHD-type
+Zinc finger, RING-type

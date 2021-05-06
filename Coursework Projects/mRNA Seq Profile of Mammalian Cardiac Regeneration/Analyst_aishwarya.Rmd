@@ -1,0 +1,70 @@
+---
+title: "Project2_Analyst"
+author: "adeengar"
+date: "2/25/2020"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##Get the data
+```{r get data}
+#Load csv file containing gene expression statistics
+library(data.table)
+data <- fread("/projectnb/bf528/users/group4/project2/analysis/cuffdiff_out/gene_exp.diff")
+data
+```
+
+##Sort the data frame so that the smallest q_values are at the top. Produce a table of the top ten differentially expressed genes. Produce a histogram of the log2.foldchange column for all genes.
+
+```{r differential expression analysis}
+#Sorting the table in increasing order of q-value
+sortdata <- data[order(data$q_value),]
+sortdata
+
+#Generating a table of the top ten differentially expressed genes
+top<- head(sortdata, n=10)
+topupd<- data.frame(top$gene, top$`log2(fold_change)`, top$value_1, top$value_2, top$p_value, top$q_value)
+topupd
+
+#histogram of log2(fold_change)
+histfoldch <- data$`log2(fold_change)`
+hist(histfoldch, breaks=5, main = "Histogram of log2.foldchange", col= "lightblue", xlab= "log2.fold change")
+
+```
+
+##Create a new data frame that contains only the genes where the last column, named significant, is equal to yes.Create a second histogram of the log2 fold change values only for significant genes. Subset the significant gene data frame you just created into two separate data frames with only the up- and down-regulated genes using the log2.foldchange column. Include the number of up and down regulated genes.
+
+```{r analysis}
+#Dataframe containing "significant=yes" values
+x <- data[data$significant == "yes",]
+as.data.frame(x)
+
+#Histogram of x dataframe values
+histfoldch <- x$`log2(fold_change)`
+hist(histfoldch, breaks=5, main = "Histogram of log2.foldchange", col= "lightblue", xlab= "log2.fold change")
+
+#Subsetting dataframe containing downregulated genes
+down<- x[x$`log2(fold_change)` < 0]
+
+#Subsetting dataframe containing upregulated genes
+up <- x[x$`log2(fold_change)` > 0]
+
+#No of downregulated genes
+nrow(down)
+
+#No of upregulated genes
+nrow(up)
+```
+
+##Write out the up- and down- regulated gene names to separate csv files.
+
+```{r analysis}
+#Generating CSV files containing upregulated and downregulated genes for subsequent DAVID analysis
+upfile <- write.csv(up$gene, file = "up-regulated.csv", row.names = FALSE)
+downfile <- write.csv(down$gene, file = "down-regulatedgenes.csv", row.names = FALSE)
+
+```
